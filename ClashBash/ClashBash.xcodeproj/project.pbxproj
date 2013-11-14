@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F14DA95A80E4B0FB8DA6352 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6768D18D76A64CFE9D5F8F11 /* libPods.a */; };
+		AA8505C6183598BA00E8E1AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8505C5183598BA00E8E1AB /* Foundation.framework */; };
+		AA8505C8183598BA00E8E1AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8505C7183598BA00E8E1AB /* CoreGraphics.framework */; };
+		AA8505CA183598BA00E8E1AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8505C9183598BA00E8E1AB /* UIKit.framework */; };
+		AA8505D0183598BA00E8E1AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA8505CE183598BA00E8E1AB /* InfoPlist.strings */; };
+		AA8505D2183598BA00E8E1AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8505D1183598BA00E8E1AB /* main.m */; };
+		AA8505D6183598BA00E8E1AB /* BNRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8505D5183598BA00E8E1AB /* BNRAppDelegate.m */; };
+		AA8505D9183598BA00E8E1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8505D7183598BA00E8E1AB /* Main.storyboard */; };
+		AA8505DE183598BA00E8E1AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA8505DD183598BA00E8E1AB /* Images.xcassets */; };
+		AA8505E5183598BA00E8E1AB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8505E4183598BA00E8E1AB /* XCTest.framework */; };
+		AA8505E6183598BA00E8E1AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8505C5183598BA00E8E1AB /* Foundation.framework */; };
+		AA8505E7183598BA00E8E1AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8505C9183598BA00E8E1AB /* UIKit.framework */; };
+		AA8505EF183598BA00E8E1AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA8505ED183598BA00E8E1AB /* InfoPlist.strings */; };
+		AA8505F1183598BA00E8E1AB /* ClashBashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8505F0183598BA00E8E1AB /* ClashBashTests.m */; };
+		AA8505FC1835990E00E8E1AB /* BNRCatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8505FB1835990E00E8E1AB /* BNRCatalogViewController.m */; };
+		AA8505FF183599DB00E8E1AB /* BNRTheStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8505FE183599DB00E8E1AB /* BNRTheStore.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA8505E8183598BA00E8E1AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA8505BA183598BA00E8E1AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA8505C1183598BA00E8E1AB;
+			remoteInfo = ClashBash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6768D18D76A64CFE9D5F8F11 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA8505C2183598BA00E8E1AB /* ClashBash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClashBash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA8505C5183598BA00E8E1AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA8505C7183598BA00E8E1AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AA8505C9183598BA00E8E1AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AA8505CD183598BA00E8E1AB /* ClashBash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClashBash-Info.plist"; sourceTree = "<group>"; };
+		AA8505CF183598BA00E8E1AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA8505D1183598BA00E8E1AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA8505D3183598BA00E8E1AB /* ClashBash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClashBash-Prefix.pch"; sourceTree = "<group>"; };
+		AA8505D4183598BA00E8E1AB /* BNRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRAppDelegate.h; sourceTree = "<group>"; };
+		AA8505D5183598BA00E8E1AB /* BNRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRAppDelegate.m; sourceTree = "<group>"; };
+		AA8505D8183598BA00E8E1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA8505DD183598BA00E8E1AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AA8505E3183598BA00E8E1AB /* ClashBashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClashBashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA8505E4183598BA00E8E1AB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AA8505EC183598BA00E8E1AB /* ClashBashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClashBashTests-Info.plist"; sourceTree = "<group>"; };
+		AA8505EE183598BA00E8E1AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA8505F0183598BA00E8E1AB /* ClashBashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClashBashTests.m; sourceTree = "<group>"; };
+		AA8505FA1835990E00E8E1AB /* BNRCatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCatalogViewController.h; sourceTree = "<group>"; };
+		AA8505FB1835990E00E8E1AB /* BNRCatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCatalogViewController.m; sourceTree = "<group>"; };
+		AA8505FD183599DB00E8E1AB /* BNRTheStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRTheStore.h; sourceTree = "<group>"; };
+		AA8505FE183599DB00E8E1AB /* BNRTheStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRTheStore.m; sourceTree = "<group>"; };
+		D51F579B2C3540D0B157E386 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA8505BF183598BA00E8E1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8505C8183598BA00E8E1AB /* CoreGraphics.framework in Frameworks */,
+				AA8505CA183598BA00E8E1AB /* UIKit.framework in Frameworks */,
+				AA8505C6183598BA00E8E1AB /* Foundation.framework in Frameworks */,
+				9F14DA95A80E4B0FB8DA6352 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA8505E0183598BA00E8E1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8505E5183598BA00E8E1AB /* XCTest.framework in Frameworks */,
+				AA8505E7183598BA00E8E1AB /* UIKit.framework in Frameworks */,
+				AA8505E6183598BA00E8E1AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA8505B9183598BA00E8E1AB = {
+			isa = PBXGroup;
+			children = (
+				AA8505CB183598BA00E8E1AB /* ClashBash */,
+				AA8505EA183598BA00E8E1AB /* ClashBashTests */,
+				AA8505C4183598BA00E8E1AB /* Frameworks */,
+				AA8505C3183598BA00E8E1AB /* Products */,
+				D51F579B2C3540D0B157E386 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		AA8505C3183598BA00E8E1AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA8505C2183598BA00E8E1AB /* ClashBash.app */,
+				AA8505E3183598BA00E8E1AB /* ClashBashTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA8505C4183598BA00E8E1AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA8505C5183598BA00E8E1AB /* Foundation.framework */,
+				AA8505C7183598BA00E8E1AB /* CoreGraphics.framework */,
+				AA8505C9183598BA00E8E1AB /* UIKit.framework */,
+				AA8505E4183598BA00E8E1AB /* XCTest.framework */,
+				6768D18D76A64CFE9D5F8F11 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA8505CB183598BA00E8E1AB /* ClashBash */ = {
+			isa = PBXGroup;
+			children = (
+				AA8505D4183598BA00E8E1AB /* BNRAppDelegate.h */,
+				AA8505D5183598BA00E8E1AB /* BNRAppDelegate.m */,
+				AA8505D7183598BA00E8E1AB /* Main.storyboard */,
+				AA8505DD183598BA00E8E1AB /* Images.xcassets */,
+				AA8505CC183598BA00E8E1AB /* Supporting Files */,
+				AA8505FA1835990E00E8E1AB /* BNRCatalogViewController.h */,
+				AA8505FB1835990E00E8E1AB /* BNRCatalogViewController.m */,
+				AA8505FD183599DB00E8E1AB /* BNRTheStore.h */,
+				AA8505FE183599DB00E8E1AB /* BNRTheStore.m */,
+			);
+			path = ClashBash;
+			sourceTree = "<group>";
+		};
+		AA8505CC183598BA00E8E1AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA8505CD183598BA00E8E1AB /* ClashBash-Info.plist */,
+				AA8505CE183598BA00E8E1AB /* InfoPlist.strings */,
+				AA8505D1183598BA00E8E1AB /* main.m */,
+				AA8505D3183598BA00E8E1AB /* ClashBash-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA8505EA183598BA00E8E1AB /* ClashBashTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA8505F0183598BA00E8E1AB /* ClashBashTests.m */,
+				AA8505EB183598BA00E8E1AB /* Supporting Files */,
+			);
+			path = ClashBashTests;
+			sourceTree = "<group>";
+		};
+		AA8505EB183598BA00E8E1AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA8505EC183598BA00E8E1AB /* ClashBashTests-Info.plist */,
+				AA8505ED183598BA00E8E1AB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA8505C1183598BA00E8E1AB /* ClashBash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA8505F4183598BA00E8E1AB /* Build configuration list for PBXNativeTarget "ClashBash" */;
+			buildPhases = (
+				6046A55ACF6E4E8BAA254779 /* Check Pods Manifest.lock */,
+				AA8505BE183598BA00E8E1AB /* Sources */,
+				AA8505BF183598BA00E8E1AB /* Frameworks */,
+				AA8505C0183598BA00E8E1AB /* Resources */,
+				8424E30400E5435A81453D15 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClashBash;
+			productName = ClashBash;
+			productReference = AA8505C2183598BA00E8E1AB /* ClashBash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA8505E2183598BA00E8E1AB /* ClashBashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA8505F7183598BA00E8E1AB /* Build configuration list for PBXNativeTarget "ClashBashTests" */;
+			buildPhases = (
+				AA8505DF183598BA00E8E1AB /* Sources */,
+				AA8505E0183598BA00E8E1AB /* Frameworks */,
+				AA8505E1183598BA00E8E1AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA8505E9183598BA00E8E1AB /* PBXTargetDependency */,
+			);
+			name = ClashBashTests;
+			productName = ClashBashTests;
+			productReference = AA8505E3183598BA00E8E1AB /* ClashBashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA8505BA183598BA00E8E1AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BNR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "The Guys";
+				TargetAttributes = {
+					AA8505E2183598BA00E8E1AB = {
+						TestTargetID = AA8505C1183598BA00E8E1AB;
+					};
+				};
+			};
+			buildConfigurationList = AA8505BD183598BA00E8E1AB /* Build configuration list for PBXProject "ClashBash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA8505B9183598BA00E8E1AB;
+			productRefGroup = AA8505C3183598BA00E8E1AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA8505C1183598BA00E8E1AB /* ClashBash */,
+				AA8505E2183598BA00E8E1AB /* ClashBashTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA8505C0183598BA00E8E1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8505DE183598BA00E8E1AB /* Images.xcassets in Resources */,
+				AA8505D0183598BA00E8E1AB /* InfoPlist.strings in Resources */,
+				AA8505D9183598BA00E8E1AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA8505E1183598BA00E8E1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8505EF183598BA00E8E1AB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6046A55ACF6E4E8BAA254779 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8424E30400E5435A81453D15 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA8505BE183598BA00E8E1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8505FF183599DB00E8E1AB /* BNRTheStore.m in Sources */,
+				AA8505D2183598BA00E8E1AB /* main.m in Sources */,
+				AA8505D6183598BA00E8E1AB /* BNRAppDelegate.m in Sources */,
+				AA8505FC1835990E00E8E1AB /* BNRCatalogViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA8505DF183598BA00E8E1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8505F1183598BA00E8E1AB /* ClashBashTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA8505E9183598BA00E8E1AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA8505C1183598BA00E8E1AB /* ClashBash */;
+			targetProxy = AA8505E8183598BA00E8E1AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA8505CE183598BA00E8E1AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA8505CF183598BA00E8E1AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AA8505D7183598BA00E8E1AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA8505D8183598BA00E8E1AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA8505ED183598BA00E8E1AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA8505EE183598BA00E8E1AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA8505F2183598BA00E8E1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA8505F3183598BA00E8E1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA8505F5183598BA00E8E1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D51F579B2C3540D0B157E386 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClashBash/ClashBash-Prefix.pch";
+				INFOPLIST_FILE = "ClashBash/ClashBash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AA8505F6183598BA00E8E1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D51F579B2C3540D0B157E386 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClashBash/ClashBash-Prefix.pch";
+				INFOPLIST_FILE = "ClashBash/ClashBash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AA8505F8183598BA00E8E1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ClashBash.app/ClashBash";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClashBash/ClashBash-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ClashBashTests/ClashBashTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AA8505F9183598BA00E8E1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ClashBash.app/ClashBash";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClashBash/ClashBash-Prefix.pch";
+				INFOPLIST_FILE = "ClashBashTests/ClashBashTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA8505BD183598BA00E8E1AB /* Build configuration list for PBXProject "ClashBash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA8505F2183598BA00E8E1AB /* Debug */,
+				AA8505F3183598BA00E8E1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA8505F4183598BA00E8E1AB /* Build configuration list for PBXNativeTarget "ClashBash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA8505F5183598BA00E8E1AB /* Debug */,
+				AA8505F6183598BA00E8E1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA8505F7183598BA00E8E1AB /* Build configuration list for PBXNativeTarget "ClashBashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA8505F8183598BA00E8E1AB /* Debug */,
+				AA8505F9183598BA00E8E1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA8505BA183598BA00E8E1AB /* Project object */;
+}
