@@ -16,6 +16,8 @@ typedef void (^CompletionBlock)(NSArray *response);
 @property (nonatomic, readwrite, copy) CompletionBlock complete;
 
 - (id)initWithURL:(NSString *)urlString;
+- (bool)placeOrderForAccount:(NSString *)account ForItem:(NSInteger)item;
+
 - (void)loadCatalogItems;
 
 

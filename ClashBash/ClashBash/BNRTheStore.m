@@ -48,6 +48,10 @@
     [operation start];
 }
 
+-(bool)placeOrderForAccount:(NSString *)account ForItem:(NSInteger)item {
+    return true;
+}
+
 
 
 
