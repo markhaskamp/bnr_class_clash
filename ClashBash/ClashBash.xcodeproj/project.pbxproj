@@ -12,6 +12,7 @@
 		AA4E19121835A4DA0043F30C /* loading_anim.png in Resources */ = {isa = PBXBuildFile; fileRef = AA4E19111835A4DA0043F30C /* loading_anim.png */; };
 		AA4E19141835AE4B0043F30C /* out_of_stock.png in Resources */ = {isa = PBXBuildFile; fileRef = AA4E19131835AE4B0043F30C /* out_of_stock.png */; };
 		AA4E19161835AFBF0043F30C /* store_offline.png in Resources */ = {isa = PBXBuildFile; fileRef = AA4E19151835AFBF0043F30C /* store_offline.png */; };
+		AA4E19191835B2560043F30C /* BNRHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4E19181835B2560043F30C /* BNRHistoryViewController.m */; };
 		AA8505C6183598BA00E8E1AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8505C5183598BA00E8E1AB /* Foundation.framework */; };
 		AA8505C8183598BA00E8E1AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8505C7183598BA00E8E1AB /* CoreGraphics.framework */; };
 		AA8505CA183598BA00E8E1AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8505C9183598BA00E8E1AB /* UIKit.framework */; };
@@ -46,6 +47,8 @@
 		AA4E19111835A4DA0043F30C /* loading_anim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_anim.png; sourceTree = "<group>"; };
 		AA4E19131835AE4B0043F30C /* out_of_stock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = out_of_stock.png; sourceTree = "<group>"; };
 		AA4E19151835AFBF0043F30C /* store_offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store_offline.png; sourceTree = "<group>"; };
+		AA4E19171835B2560043F30C /* BNRHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHistoryViewController.h; sourceTree = "<group>"; };
+		AA4E19181835B2560043F30C /* BNRHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHistoryViewController.m; sourceTree = "<group>"; };
 		AA8505C2183598BA00E8E1AB /* ClashBash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClashBash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8505C5183598BA00E8E1AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AA8505C7183598BA00E8E1AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -136,6 +139,8 @@
 				AA8505D4183598BA00E8E1AB /* BNRAppDelegate.h */,
 				AA8505D5183598BA00E8E1AB /* BNRAppDelegate.m */,
 				AA8505D7183598BA00E8E1AB /* Main.storyboard */,
+				AA4E19171835B2560043F30C /* BNRHistoryViewController.h */,
+				AA4E19181835B2560043F30C /* BNRHistoryViewController.m */,
 				AA8505DD183598BA00E8E1AB /* Images.xcassets */,
 				AA8505CC183598BA00E8E1AB /* Supporting Files */,
 				AA8505FA1835990E00E8E1AB /* BNRCatalogViewController.h */,
@@ -313,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA4E19191835B2560043F30C /* BNRHistoryViewController.m in Sources */,
 				AA8505FF183599DB00E8E1AB /* BNRTheStore.m in Sources */,
 				AA8505D2183598BA00E8E1AB /* main.m in Sources */,
 				AA8505D6183598BA00E8E1AB /* BNRAppDelegate.m in Sources */,
