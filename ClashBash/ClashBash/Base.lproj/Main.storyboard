@@ -13,11 +13,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="catalogItemCell" id="bcn-am-Ee9" customClass="BNRCatalogItemCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="catalogItemCell" id="bcn-am-Ee9" customClass="BNRCatalogItemCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bcn-am-Ee9" id="RSf-C6-xoi">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dny-Eb-Fsx">
@@ -44,6 +44,7 @@
                                     <outlet property="itemImage" destination="Dny-Eb-Fsx" id="c5h-2I-qew"/>
                                     <outlet property="itemNameLabel" destination="eYr-5D-uTQ" id="kT7-bq-zVh"/>
                                     <outlet property="itemPriceLabel" destination="rNc-fE-kk8" id="Z8v-Yo-HHY"/>
+                                    <segue destination="Adp-qo-JFD" kind="push" id="YrS-H6-aTs"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -52,11 +53,97 @@
                             <outlet property="delegate" destination="7x4-yo-Dj1" id="cZa-Qk-y1x"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Catalog" id="hBl-eh-zL6"/>
+                    <navigationItem key="navigationItem" title="Catalog" id="hBl-eh-zL6">
+                        <barButtonItem key="rightBarButtonItem" title="History" id="OD9-eB-dBQ">
+                            <connections>
+                                <segue destination="296-38-Aay" kind="push" id="K87-m1-tPq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TIX-gP-da8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1187" y="63"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bTV-DS-KRN">
+            <objects>
+                <viewController id="296-38-Aay" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R11-Vx-mmX"/>
+                        <viewControllerLayoutGuide type="bottom" id="vQ0-MI-b7u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x6s-iD-q7w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We're Sorry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2A2-tW-GW9">
+                                <rect key="frame" x="86" y="117" width="148" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The store is currently offline." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbq-sU-tf1">
+                                <rect key="frame" x="52" y="167" width="216" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="store_offline.png" translatesAutoresizingMaskIntoConstraints="NO" id="yL7-hE-kOW">
+                                <rect key="frame" x="0.0" y="213" width="320" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VtP-jx-WPU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PPE-9l-Nw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1651" y="727"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ah3-e4-CyM">
+            <objects>
+                <viewController id="Adp-qo-JFD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="col-Sg-o8r"/>
+                        <viewControllerLayoutGuide type="bottom" id="nlp-9m-nej"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K66-Jm-qf5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We're Sorry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umn-4k-t1e">
+                                <rect key="frame" x="86" y="103" width="148" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The item you selected is" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z12-eT-hnm">
+                                <rect key="frame" x="67" y="161" width="186" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="currently out of stock." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sb7-QJ-a5i">
+                                <rect key="frame" x="76" y="190" width="168" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="out_of_stock.png" translatesAutoresizingMaskIntoConstraints="NO" id="jqc-Ia-XK1">
+                                <rect key="frame" x="40" y="219" width="240" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WrG-f5-k4D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0h-Yo-c6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="63"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ynh-yB-2Qs">
@@ -77,6 +164,10 @@
             <point key="canvasLocation" x="661" y="63"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="out_of_stock.png" width="200" height="252"/>
+        <image name="store_offline.png" width="619" height="250"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

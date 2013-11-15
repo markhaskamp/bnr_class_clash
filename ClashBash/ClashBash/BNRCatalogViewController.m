@@ -36,7 +36,8 @@
     BNRTheStore *store = [[BNRTheStore alloc] initWithURL:@"https://bnr-fruititems.appspot.com"];
     store.complete = ^(NSArray* response) {
         NSLog(@"%@", response);
-        self.catalogItems = response;
+        self.catalogItems = (NSArray *)response;
+        [self.tableView reloadData];
     };
     [store loadCatalogItems];
 }
