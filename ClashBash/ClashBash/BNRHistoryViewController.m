@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     BNRTheStore *store = [[BNRTheStore alloc] initWithURL:@"https://bnr-fruititems.appspot.com"];
-    //NSDictionary *historyItem = @{@"NAME":@"JON", @"ORDER":@"new", @"KEY":@"blahblahblah"};
+    self.historyItems = [store history];
 }
 
 #pragma mark - Table view data source
@@ -47,8 +47,8 @@
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
+    NSDictionary *histItem = [self.historyItems objectAtIndex:indexPath.row];
+    cell.textLabel.text = [histItem objectForKey:@"NAME"];
     
     return cell;
 }

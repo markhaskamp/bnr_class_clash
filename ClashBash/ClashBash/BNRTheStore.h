@@ -17,7 +17,7 @@ typedef void (^CompletionBlock)(NSArray *response);
 
 - (id)initWithURL:(NSString *)urlString;
 - (bool)placeOrderForAccount:(NSString *)account ForItem:(NSInteger)item;
-- (NSDictionary *)history;
+- (NSArray *)history;
 
 - (void)loadCatalogItems;
 
