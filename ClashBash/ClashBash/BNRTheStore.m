@@ -52,6 +52,11 @@
     return true;
 }
 
+-(NSDictionary *)history {
+    (NSDictionary 
+    return nil;
+}
+
 
 
 
