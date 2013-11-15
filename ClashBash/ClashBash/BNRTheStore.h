@@ -10,6 +10,9 @@
 
 @interface BNRTheStore : NSObject
 
+
+
 - (NSArray *)getCatalog;
+
 
 @end
