@@ -8,11 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^CompletionBlock)(NSArray *response);
+
+
 @interface BNRTheStore : NSObject
 
+@property (nonatomic, readwrite, copy) CompletionBlock complete;
 
-
-- (NSArray *)getCatalog;
+- (id)initWithURL:(NSString *)urlString;
+- (void)loadCatalogItems;
 
 
 @end

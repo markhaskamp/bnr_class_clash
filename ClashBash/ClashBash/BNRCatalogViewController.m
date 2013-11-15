@@ -7,6 +7,8 @@
 //
 
 #import "BNRCatalogViewController.h"
+#import "BNRTheStore.h"
+
 
 @interface BNRCatalogViewController ()
 
@@ -32,6 +34,13 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    // example access code
+    BNRTheStore *store = [[BNRTheStore alloc] initWithURL:@"https://bnr-fruititems.appspot.com"];
+    store.complete = ^(NSArray* response) {
+        NSLog(@"%@", response);
+    };
+    [store loadCatalogItems];
 }
 
 - (void)didReceiveMemoryWarning

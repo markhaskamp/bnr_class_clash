@@ -9,9 +9,11 @@
 #import "BNRTheStore.h"
 #import <AFNetworking/AFNetworking.h>
 
+
 @interface BNRTheStore ()
 
 @property (nonatomic, strong) NSArray *catalog_items;
+@property (nonatomic) NSString *storeURL;
 
 @end
 
@@ -20,30 +22,35 @@
 -(id)initWithURL:(NSString *)urlString {
     self = [super init];
     if (self != nil) {
-        
-        //NSURL *url = [NSURL URLWithString:@"https://bnr-fruititems.appspot.com"];
-        NSURL *url = [NSURL URLWithString:urlString];
-        NSURLRequest *request = [NSURLRequest requestWithURL:url];
-        
-        AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc]
-                                             initWithRequest:request];
-        
-        operation.responseSerializer = [AFJSONResponseSerializer serializer];
-        [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-            NSLog(@"Successfull call to url");
-            self.catalog_items = responseObject;
-        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-            NSLog(@"Error. %@", error);
-        }];
+        self.storeURL = urlString;
     }
-    
     return self;
 }
 
-
-- (NSArray *)getCatalog {
-    return self.catalog_items;
+-(void)loadCatalogItems {
+    NSURL *url = [NSURL URLWithString:self.storeURL];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc]
+                                         initWithRequest:request];
+    
+    operation.responseSerializer = [AFJSONResponseSerializer serializer];
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Successfull call to url");
+        self.catalog_items = responseObject;
+        if (self.complete) {
+            self.complete(responseObject);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error. %@", error);
+    }];
+    
+    [operation start];
 }
+
+
+
+
 
 
 @end
