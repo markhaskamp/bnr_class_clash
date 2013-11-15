@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BNRTheStore.h"
 
 @interface BNRCatalogViewController : UITableViewController
+
+@property (nonatomic, strong) BNRTheStore *theStore;
+@property (nonatomic, strong) NSArray *catalogItems;
 
 @end

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9F14DA95A80E4B0FB8DA6352 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6768D18D76A64CFE9D5F8F11 /* libPods.a */; };
+		AA4E190E18359DA00043F30C /* BNRCatalogItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4E190D18359DA00043F30C /* BNRCatalogItemCell.m */; };
+		AA4E19121835A4DA0043F30C /* loading_anim.png in Resources */ = {isa = PBXBuildFile; fileRef = AA4E19111835A4DA0043F30C /* loading_anim.png */; };
 		AA8505C6183598BA00E8E1AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8505C5183598BA00E8E1AB /* Foundation.framework */; };
 		AA8505C8183598BA00E8E1AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8505C7183598BA00E8E1AB /* CoreGraphics.framework */; };
 		AA8505CA183598BA00E8E1AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8505C9183598BA00E8E1AB /* UIKit.framework */; };
@@ -37,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		6768D18D76A64CFE9D5F8F11 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4E190C18359DA00043F30C /* BNRCatalogItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCatalogItemCell.h; sourceTree = "<group>"; };
+		AA4E190D18359DA00043F30C /* BNRCatalogItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCatalogItemCell.m; sourceTree = "<group>"; };
+		AA4E19111835A4DA0043F30C /* loading_anim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_anim.png; sourceTree = "<group>"; };
 		AA8505C2183598BA00E8E1AB /* ClashBash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClashBash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8505C5183598BA00E8E1AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AA8505C7183598BA00E8E1AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +126,7 @@
 		AA8505CB183598BA00E8E1AB /* ClashBash */ = {
 			isa = PBXGroup;
 			children = (
+				AA4E19111835A4DA0043F30C /* loading_anim.png */,
 				AA8505D4183598BA00E8E1AB /* BNRAppDelegate.h */,
 				AA8505D5183598BA00E8E1AB /* BNRAppDelegate.m */,
 				AA8505D7183598BA00E8E1AB /* Main.storyboard */,
@@ -130,6 +136,8 @@
 				AA8505FB1835990E00E8E1AB /* BNRCatalogViewController.m */,
 				AA8505FD183599DB00E8E1AB /* BNRTheStore.h */,
 				AA8505FE183599DB00E8E1AB /* BNRTheStore.m */,
+				AA4E190C18359DA00043F30C /* BNRCatalogItemCell.h */,
+				AA4E190D18359DA00043F30C /* BNRCatalogItemCell.m */,
 			);
 			path = ClashBash;
 			sourceTree = "<group>";
@@ -243,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA8505DE183598BA00E8E1AB /* Images.xcassets in Resources */,
+				AA4E19121835A4DA0043F30C /* loading_anim.png in Resources */,
 				AA8505D0183598BA00E8E1AB /* InfoPlist.strings in Resources */,
 				AA8505D9183598BA00E8E1AB /* Main.storyboard in Resources */,
 			);
@@ -299,6 +308,7 @@
 				AA8505FF183599DB00E8E1AB /* BNRTheStore.m in Sources */,
 				AA8505D2183598BA00E8E1AB /* main.m in Sources */,
 				AA8505D6183598BA00E8E1AB /* BNRAppDelegate.m in Sources */,
+				AA4E190E18359DA00043F30C /* BNRCatalogItemCell.m in Sources */,
 				AA8505FC1835990E00E8E1AB /* BNRCatalogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
