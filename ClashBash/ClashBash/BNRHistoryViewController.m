@@ -28,8 +28,7 @@
 {
     [super viewDidLoad];
     BNRTheStore *store = [[BNRTheStore alloc] initWithURL:@"https://bnr-fruititems.appspot.com"];
-    NSDictionary *historyItem = @{@"NAME":@"JON", @"ORDER":@"new", @"KEY":@"blahblahblah"};
-//    self.historyItems = pNS
+    //NSDictionary *historyItem = @{@"NAME":@"JON", @"ORDER":@"new", @"KEY":@"blahblahblah"};
 }
 
 #pragma mark - Table view data source
