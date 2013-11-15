@@ -45,10 +45,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     NSDictionary *histItem = [self.historyItems objectAtIndex:indexPath.row];
-    cell.textLabel.text = [histItem objectForKey:@"NAME"];
+    cell.textLabel.text = [histItem objectForKey:@"ACCOUNT"];
     
     return cell;
 }

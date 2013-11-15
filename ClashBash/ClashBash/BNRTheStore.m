@@ -55,12 +55,9 @@
 -(NSMutableArray *)history {
     NSMutableArray *returnArray = [[NSMutableArray alloc] initWithCapacity:4];
     [returnArray addObject:@{@"ACCOUNT": @"JON", @"ORDER": @"new", @"KEY": @"ahBzfmJuci1mcnVpdGl0ZW1zcgsLEgVPcmRlchgBDA"}];
-    /*
-    [returnArray addObject:[[NSDictionary alloc] initWithObjectsAndKeys:, nil]];
-    [returnArray addObject:[[NSDictionary alloc] initWithObjectsAndKeys:@{@"ACCOUNT": @"TC456", @"ORDER": @"new", @"KEY": @"ahBzfmJuci1mcnVpdGl0ZW1zcgwLEgVPcmRlchjRDww"}, nil]];
-    [returnArray addObject:[[NSDictionary alloc] initWithObjectsAndKeys:@{@"ACCOUNT": @"TZ123", @"ORDER": @"Hat", @"KEY": @"ahBzfmJuci1mcnVpdGl0ZW1zcgwLEgVPcmRlchi5Fww"}, nil]];
-    [returnArray addObject:[[NSDictionary alloc] initWithObjectsAndKeys:@{@"ACCOUNT": @"TZ123", @"ORDER": @"Hat", @"KEY": @"ahBzfmJuci1mcnVpdGl0ZW1zcgwLEgVPcmRlchiJJww"}, nil]];
-    */
+    [returnArray addObject:@{@"ACCOUNT": @"TC456", @"ORDER": @"new", @"KEY": @"ahBzfmJuci1mcnVpdGl0ZW1zcgwLEgVPcmRlchjRDww"}];
+    [returnArray addObject:@{@"ACCOUNT": @"TZ123", @"ORDER": @"Hat", @"KEY": @"ahBzfmJuci1mcnVpdGl0ZW1zcgwLEgVPcmRlchi5Fww"}];
+    [returnArray addObject:@{@"ACCOUNT": @"TZ123", @"ORDER": @"Hat", @"KEY": @"ahBzfmJuci1mcnVpdGl0ZW1zcgwLEgVPcmRlchiJJww"}];
     return returnArray;
 }
 
